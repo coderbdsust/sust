@@ -6,7 +6,7 @@
 <title>View Page</title>
 </head>
 <body>
-<h1>Animal List Page!</h1>
+<h1>Animal Lists!</h1>
 <c:forEach var="animal" items="${animals}">
 <p>${animal}</p><br/>
 </c:forEach>
