@@ -1,4 +1,4 @@
-package com.sust.servlet;
+package com.sust.servlet.file;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-import com.sust.db.StudentData;
+
 import com.sust.db.utils.NameBuilder;
 
 @WebServlet("/fileUploader")
