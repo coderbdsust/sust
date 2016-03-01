@@ -70,10 +70,10 @@ public class FileUploaderServlet extends HttpServlet {
 			
 			System.out.println("[FILE SAVE DIRECTORY]: "+fileSaveDirectory);
 			System.out.println("[FILE UPLOADING RIDRECTING TO MESSAGE PAGE]!");
-			request.getRequestDispatcher("/message?fileUploadStatus=true&fileRelativeURL="+fileSaveURL).forward(request, response);
+			request.getRequestDispatcher("/downloader?fileUploadStatus=true&fileRelativeURL="+fileSaveURL).forward(request, response);
 		} catch (Exception ex) {
 			System.out.println("[FILE UPLOAD EXCEPTION]: " + ex.getMessage());
-			request.getRequestDispatcher("/message?fileUploadStatus=false").forward(request, response);
+			request.getRequestDispatcher("/downloader?fileUploadStatus=false").forward(request, response);
 		}
 
 	}
